@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_page_gradient"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/navigation_bar_padding"
+    android:paddingTop="@dimen/status_bar_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/big_padding"
+        android:paddingLeft="@dimen/big_padding"
+        android:paddingRight="@dimen/big_padding"
+        android:paddingTop="@dimen/massive_padding">
+
+        <include
+            layout="@layout/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:padding="@dimen/default_padding"
+            android:scrollbars="vertical"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

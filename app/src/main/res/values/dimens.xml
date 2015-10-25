@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="tiny_padding">2dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="big_padding">12dp</dimen>
+    <dimen name="large_padding">16dp</dimen>
+    <dimen name="huge_padding">20dp</dimen>
+    <dimen name="massive_padding">24dp</dimen>
+    <dimen name="separator_margin">32dp</dimen>
+
+    <dimen name="status_bar_padding">24dp</dimen>
+    <dimen name="navigation_bar_padding">40dp</dimen>
+
+    <dimen name="huge_app_icon">72dp</dimen>
+    <dimen name="larger_app_icon">64dp</dimen>
+    <dimen name="large_app_icon">56dp</dimen>
+    <dimen name="app_icon">48dp</dimen>
+    <dimen name="medium_app_icon">40dp</dimen>
+    <dimen name="small_app_icon">32dp</dimen>
+    <dimen name="small_app_name">12sp</dimen>
+    <dimen name="medium_app_name">14sp</dimen>
+
+    <dimen name="app_name">21sp</dimen>
+
+    <dimen name="time">48sp</dimen>
+    <dimen name="apps">36sp</dimen>
+    <dimen name="date">18sp</dimen>
+    <dimen name="recent_app_name">14sp</dimen>
+    <dimen name="recent_app_title">14sp</dimen>
+    <dimen name="phone_name">12sp</dimen>
+
+    <dimen name="profile_pic_dimension">80sp</dimen>
+    <dimen name="call_type">24sp</dimen>
+    <dimen name="call_count">56sp</dimen>
+
+    <dimen name="play_art">108dp</dimen>
+    <dimen name="play_song">21dp</dimen>
+    <dimen name="play_artist">14dp</dimen>
+
+    <dimen name="event_title">16sp</dimen>
+    <dimen name="event_description">12sp</dimen>
+    <dimen name="event_date_time">14sp</dimen>
+
+    <dimen name="settings_title">16sp</dimen>
+    <dimen name="settings_subtitle">12sp</dimen>
+
+    <dimen name="toolbar_height">48sp</dimen>
+    <dimen name="toolbar_title">21sp</dimen>
+</resources>

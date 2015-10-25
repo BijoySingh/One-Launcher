@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/play_art"
+        android:layout_height="@dimen/play_art">
+
+        <ImageView
+            android:id="@+id/play_art"
+            android:layout_width="@dimen/play_art"
+            android:layout_height="@dimen/play_art"
+            android:padding="@dimen/default_padding"
+            android:src="@drawable/disc_icon"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/default_padding"
+        android:paddingLeft="@dimen/large_padding"
+        android:paddingRight="@dimen/large_padding"
+        android:paddingTop="@dimen/default_padding">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_song_playing"
+            android:textColor="@color/primary_white_text"
+            android:textSize="@dimen/play_song"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_to_open"
+            android:textColor="@color/primary_white_text"
+            android:textSize="@dimen/play_artist"/>
+
+    </LinearLayout>
+</LinearLayout>

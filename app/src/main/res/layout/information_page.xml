@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/info_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_page_gradient"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/navigation_bar_padding"
+    android:paddingTop="@dimen/status_bar_padding">
+
+    <include
+        android:id="@+id/info_title_panel"
+        layout="@layout/info_title_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.bijoykochar.launcher.view.MessageView
+                    android:id="@+id/message_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/separator_margin"
+                    android:layout_marginRight="@dimen/separator_margin"
+                    android:background="@color/app_list_separator"/>
+
+                <com.bijoykochar.launcher.view.CallLogsView
+                    android:id="@+id/call_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/separator_margin"
+                    android:layout_marginRight="@dimen/separator_margin"
+                    android:background="@color/app_list_separator"/>
+
+                <com.bijoykochar.launcher.view.CalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/separator_margin"
+                    android:layout_marginRight="@dimen/separator_margin"
+                    android:background="@color/app_list_separator"/>
+
+                <com.bijoykochar.launcher.view.AudioPlayerView
+                    android:id="@+id/audio_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/play_art"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

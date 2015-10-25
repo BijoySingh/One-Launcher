@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/navigation_bar_padding"
+              android:paddingTop="@dimen/status_bar_padding"
+              android:orientation="vertical">
+
+    <com.bijoykochar.launcher.view.TimeView
+        android:id="@+id/time_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/big_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.bijoykochar.launcher.view.RecentView
+        android:id="@+id/recent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.bijoykochar.launcher.view.TaskbarView
+        android:id="@+id/taskbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

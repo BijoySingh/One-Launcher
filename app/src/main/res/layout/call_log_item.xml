@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_pic_dimension">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_pic_dimension"
+            android:layout_height="@dimen/profile_pic_dimension"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/small_padding"
+            android:src="@drawable/face_placeholder"/>
+
+        <TextView
+            android:id="@+id/profile_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/call_count"/>
+
+        <ImageView
+            android:id="@+id/call_type"
+            android:layout_width="@dimen/call_type"
+            android:layout_height="@dimen/call_type"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_alignEnd="@+id/profile_image"
+            android:layout_alignRight="@+id/profile_image"
+            android:layout_margin="@dimen/small_padding"
+            android:background="@color/hint_white_text"
+            android:padding="@dimen/tiny_padding"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/secondary_white_text"
+        android:textSize="@dimen/phone_name"/>
+</LinearLayout>

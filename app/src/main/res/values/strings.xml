@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">One Launcher</string>
+    <string name="apps">Apps</string>
+    <string name="search">Google Search</string>
+    <string name="search_apps">Search Apps</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="favorite_apps">Favorite Apps</string>
+    <string name="recent_calls">Recent Calls</string>
+
+    <string name="no_song_playing">No song available</string>
+    <string name="click_to_open">Click to open player</string>
+    <string name="no_message_available">No messages available</string>
+    <string name="message_loading">Your messages are either loading or are unavailable</string>
+    <string name="no_events_available">No events available</string>
+    <string name="events_loading">Your events are either loading or are unavailable</string>
+
+    <string name="uninstall_app">UNINSTALL</string>
+    <string name="information_app">INFO</string>
+</resources>
